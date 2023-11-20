@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ECommerceSuite">
+    <test name="ECommerceTest">
+        <classes>
+            <class name="com.app.ecommerce.Test.ECommerceApp"/>
+        </classes>
+    </test>
+</suite>
