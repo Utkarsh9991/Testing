@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "905bfe37-560a-47e4-ad36-f27191b4acb0",
+		"name": "OpenWeatherAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2437125"
+	},
+	"item": [
+		{
+			"name": "GetWeatherLatLong",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?lat=28.61&lon=77.20&appid={{apikey}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "28.61"
+						},
+						{
+							"key": "lon",
+							"value": "77.20"
+						},
+						{
+							"key": "appid",
+							"value": "{{apikey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCityID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?id=1261588&appid={{apikey}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1261588"
+						},
+						{
+							"key": "appid",
+							"value": "{{apikey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCityByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?q=Ahmedabad&appid={{apikey}}&units=metric",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Ahmedabad"
+						},
+						{
+							"key": "appid",
+							"value": "{{apikey}}"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLanguage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?id=524901&lang=fr&appid={{apikey}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "524901"
+						},
+						{
+							"key": "lang",
+							"value": "fr"
+						},
+						{
+							"key": "appid",
+							"value": "{{apikey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
